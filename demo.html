@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Demo of CORS Anywhere</title>
+<title>Lawcodev</title>
 <meta name="viewport" content="width=device-width">
 <style>
 html, body {
@@ -45,26 +45,13 @@ textarea {
 </style>
 </head>
 <body>
-<div id="top">
-  CORS Anywhere demo &bull; <a href="https://github.com/Rob--W/cors-anywhere/">Github</a> &bull; <a href="http://cors-anywhere.herokuapp.com">Live server</a>.
-  <label>
-    Url to be fetched (example: <a href="//robwu.nl/dump.php">robwu.nl/dump.php</a>)
-    <input type="url" id="url" value="">
-  </label>
-  <label>
-    If using POST, enter the data:
-    <input type="text" id="data">
-  </label>
-  <label>
-    <button id="get">GET</button><button id="post">POST</button>
-  </label>
-</div>
+
 <div id="bottom">
   <textarea id="output"></textarea>
 </div>
 
 <script>
-  var cors_api_url = 'https://cors-anywhere.herokuapp.com/';
+  var cors_api_url = 'https://cors-lawcodev-v2.herokuapp.com/';
   function doCORSRequest(options, printResult) {
     var x = new XMLHttpRequest();
     x.open(options.method, cors_api_url + options.url);
